@@ -18,7 +18,7 @@ class Ybc_productimagehover extends Module
 		$this->name = 'ybc_productimagehover';
 		$this->tab = 'front_office_features';
 		$this->version = '1.2.0';
-		$this->author = 'PrestashopAddon.com';
+		$this->author = 'PrestashopAddon.com ArnaudFavier.com';
 		$this->need_instance = 0;
 		$this->secure_key = Tools::encrypt($this->name);
 		$this->bootstrap = true;
