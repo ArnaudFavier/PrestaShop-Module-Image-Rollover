@@ -7,7 +7,7 @@
   width: 100%;
   float: left;
 }
-ul.product_list.grid > li .product-container .product-image-container {
+ul.product_list.grid > li .thumbnail-container {
   border: 1px solid #d6d4d4;
   margin-bottom: 13px;
   padding: 9px;
@@ -15,9 +15,9 @@ ul.product_list.grid > li .product-container .product-image-container {
   overflow: hidden;
 }
 /*----------------------zoom effect------------*/
-.product-image-container .zoom:nth-child(2),
+.zoom:nth-child(2),
 .product-box .product-image .zoom:nth-child(2),
-.product-image-container .zoom.ybc_img_hover,
+.zoom.ybc_img_hover,
 .product-box .product-image .zoom.ybc_img_hover {
   opacity: 0;
   position: absolute;
@@ -32,10 +32,10 @@ ul.product_list.grid > li .product-container .product-image-container {
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
 }
-.product-container:hover .product-image-container .zoom:nth-child(2),
+.thumbnail-container:hover .zoom:nth-child(2),
 .product-box:hover .product-image .zoom:nth-child(2),
 .product-box:hover .product-image .zoom.ybc_img_hover,
-.product-container:hover .product-image-container .zoom.ybc_img_hover {
+.thumbnail-container:hover .zoom.ybc_img_hover {
   opacity: 1;
   transform: scale(1);
   -ms-transform: scale(1);
@@ -49,15 +49,15 @@ ul.product_list.grid > li .product-container .product-image-container {
     z-index: -1;
     opacity: 0;
 }
-.ie8 .product-container:hover .ybc_img_hover,
+.ie8 .thumbnail-container:hover .ybc_img_hover,
 .ie8 .product-box:hover img.ybc_img_hover {
     z-index: 0;
 }
 /*----------------------end of zoom effect------------*/
 /*----------------------fede effect-------------------*/
-.product-image-container .fade:nth-child(2),
+.fade:nth-child(2),
 .product-box .product-image .fade:nth-child(2),
-.product-image-container .fade.ybc_img_hover,
+.fade.ybc_img_hover,
 .product-box .product-image .fade.ybc_img_hover {
   opacity: 0;
   position: absolute;
@@ -67,18 +67,18 @@ ul.product_list.grid > li .product-container .product-image-container {
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
 }
-.product-container:hover .product-image-container .fade:nth-child(2),
+.thumbnail-container:hover .fade:nth-child(2),
 .product-box:hover .product-image .fade:nth-child(2),
 .product-box:hover .product-image .fade.ybc_img_hover,
-.product-container:hover .product-image-container .fade.ybc_img_hover {
+.thumbnail-container:hover .fade.ybc_img_hover {
   opacity: 1;
 }
 /*----------------------end of fade effect-------------*/
 
 /*-----------vertical_scrolling bottom to top effect-------------------*/
-.product-image-container .vertical_scrolling_bottom_to_top:nth-child(2),
+/*.vertical_scrolling_bottom_to_top:nth-child(2),
 .product-box .product-image .vertical_scrolling_bottom_to_top:nth-child(2),
-.product-image-container .vertical_scrolling_bottom_to_top.ybc_img_hover,
+.vertical_scrolling_bottom_to_top.ybc_img_hover,
 .product-box .product-image .vertical_scrolling_bottom_to_top.ybc_img_hover {
   position: absolute;
   top:110%;
@@ -88,18 +88,18 @@ ul.product_list.grid > li .product-container .product-image-container {
   -webkit-transition: top 0.5s ease 0s;
   -o-transition:top 0.5s ease 0s;
 }
-.product-container:hover .product-image-container .vertical_scrolling_bottom_to_top:nth-child(2),
+.thumbnail-container:hover .vertical_scrolling_bottom_to_top:nth-child(2),
 .product-box:hover .product-image .vertical_scrolling_bottom_to_top:nth-child(2),
 .product-box:hover .product-image .vertical_scrolling_bottom_to_top.ybc_img_hover,
-.product-container:hover .product-image-container .vertical_scrolling_bottom_to_top.ybc_img_hover {
+.thumbnail-container:hover .vertical_scrolling_bottom_to_top.ybc_img_hover {
   top:0;
 }
 /*------------end of vertical_scrolling effect-------------*/
 
 /*-----------vertical_scrolling top to bottom effect-------------------*/
-.product-image-container .vertical_scrolling_top_to_bottom:nth-child(2),
+/*.vertical_scrolling_top_to_bottom:nth-child(2),
 .product-box .product-image .vertical_scrolling_top_to_bottom:nth-child(2),
-.product-image-container .vertical_scrolling_top_to_bottom.ybc_img_hover,
+.vertical_scrolling_top_to_bottom.ybc_img_hover,
 .product-box .product-image .vertical_scrolling_top_to_bottom.ybc_img_hover {
   position: absolute;
   top:-110%;
@@ -109,18 +109,18 @@ ul.product_list.grid > li .product-container .product-image-container {
   -webkit-transition: top 0.5s ease 0s;
   -o-transition:top 0.5s ease 0s;
 }
-.product-container:hover .product-image-container .vertical_scrolling_top_to_bottom:nth-child(2),
+.thumbnail-container:hover .vertical_scrolling_top_to_bottom:nth-child(2),
 .product-box:hover .product-image .vertical_scrolling_top_to_bottom:nth-child(2),
 .product-box:hover .product-image .vertical_scrolling_top_to_bottom.ybc_img_hover,
-.product-container:hover .product-image-container .vertical_scrolling_top_to_bottom.ybc_img_hover {
+.thumbnail-container:hover .vertical_scrolling_top_to_bottom.ybc_img_hover {
   top:0;
 }
 /*------------end of vertical_scrolling effect-------------*/
 
 /*-----------horizontal_scrolling left to right effect-------------------*/
-.product-image-container .horizontal_scrolling_left_to_right:nth-child(2),
+/*.horizontal_scrolling_left_to_right:nth-child(2),
 .product-box .product-image .horizontal_scrolling_left_to_right:nth-child(2),
-.product-image-container .horizontal_scrolling_left_to_right.ybc_img_hover,
+.horizontal_scrolling_left_to_right.ybc_img_hover,
 .product-box .product-image .horizontal_scrolling_left_to_right.ybc_img_hover {
   position: absolute;
   top:0;
@@ -130,22 +130,22 @@ ul.product_list.grid > li .product-container .product-image-container {
   -webkit-transition: left 0.5s ease 0s;
   -o-transition:left 0.5s ease 0s;
 }
-.product-container:hover .product-image-container .horizontal_scrolling_left_to_right:nth-child(2),
+.thumbnail-container:hover .horizontal_scrolling_left_to_right:nth-child(2),
 .product-box:hover .product-image .horizontal_scrolling_left_to_right:nth-child(2),
 .product-box:hover .product-image .horizontal_scrolling_left_to_right.ybc_img_hover,
-.product-container:hover .product-image-container .horizontal_scrolling_left_to_right.ybc_img_hover {
+.thumbnail-container:hover .horizontal_scrolling_left_to_right.ybc_img_hover {
   left:0;
 }
 /*------------end of horizontal_scrolling effect-------------*/
 
 /*-----------horizontal_scrolling right to left effect-------------------*/
-.product-box .product-image {
+/*.product-box .product-image {
   overflow: hidden;
   position: relative;
 }
-.product-image-container .horizontal_scrolling_right_to_left:nth-child(2),
+.horizontal_scrolling_right_to_left:nth-child(2),
 .product-box .product-image .horizontal_scrolling_right_to_left:nth-child(2),
-.product-image-container .horizontal_scrolling_right_to_left.ybc_img_hover,
+.horizontal_scrolling_right_to_left.ybc_img_hover,
 .product-box .product-image .horizontal_scrolling_right_to_left.ybc_img_hover {
   position: absolute;
   top:0;
@@ -155,17 +155,17 @@ ul.product_list.grid > li .product-container .product-image-container {
   -webkit-transition:right 0.5s ease 0s;
   -o-transition:right 0.5s ease 0s;
 }
-.product-container:hover .product-image-container .horizontal_scrolling_right_to_left:nth-child(2),
+.thumbnail-container:hover .horizontal_scrolling_right_to_left:nth-child(2),
 .product-box:hover .product-image .horizontal_scrolling_right_to_left:nth-child(2),
 .product-box:hover .product-image .horizontal_scrolling_right_to_left.ybc_img_hover,
-.product-container:hover .product-image-container .horizontal_scrolling_right_to_left.ybc_img_hover {
+.thumbnail-container:hover .horizontal_scrolling_right_to_left.ybc_img_hover {
   right:0;
 }
 
 
 
 /*accessories product*/
-.product-image.product_image {
+/*.product-image.product_image {
   border: medium none;
   margin: 0;
   overflow: hidden;
@@ -206,19 +206,19 @@ ul.product_list.grid > li .product-container .product-image-container {
     transition: -o-transform 0.5s linear 0s;
     transition: transform 0.5s linear 0s;            
 }
-.product-container:hover .product-image-container img:nth-child(2),
+.thumbnail-container:hover img:nth-child(2),
 .product-box:hover .product-image .img:nth-child(2),
 .product-box:hover .product-image .img.ybc_img_hover,
-.product-container:hover .product-image-container .img.ybc_img_hover
+.thumbnail-container:hover .img.ybc_img_hover
 {
      -webkit-transform: perspective(600px) rotatey( -180deg ); 
      -o-transform: perspective(600px) rotatey( -180deg );
      transform: perspective(600px) rotatey( -180deg );            
 }
-.product-container:hover .product-image-container .flip3d:nth-child(2),
+.thumbnail-container:hover .flip3d:nth-child(2),
 .product-box:hover .product-image .flip3d:nth-child(2),
 .product-box:hover .product-image .flip3d.ybc_img_hover,
-.product-container:hover .product-image-container .flip3d.ybc_img_hover
+.thumbnail-container:hover .flip3d.ybc_img_hover
 {
      -webkit-transform: perspective(600px) rotatey( 0deg );
      -o-transform: perspective(600px) rotatey( 0deg );

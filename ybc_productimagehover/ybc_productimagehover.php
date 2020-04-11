@@ -1,9 +1,9 @@
 <?php
 /**
- * Copyright PrestashopAddon.com
+ * Copyright PrestashopAddon.com - Updated by Arnaud Favier <arnaudfavier.com>
  * Email: contact@prestashopaddon.com
  * First created: 27/11/2015
- * Last updated: NOT YET
+ * Last updated: 11/04/2020
 */
 if (!defined('_PS_VERSION_'))
 	exit;
@@ -17,7 +17,7 @@ class Ybc_productimagehover extends Module
 	{
 		$this->name = 'ybc_productimagehover';
 		$this->tab = 'front_office_features';
-		$this->version = '1.0.1';
+		$this->version = '1.2.0';
 		$this->author = 'PrestashopAddon.com';
 		$this->need_instance = 0;
 		$this->secure_key = Tools::encrypt($this->name);
@@ -27,7 +27,7 @@ class Ybc_productimagehover extends Module
 
 		$this->displayName = $this->l('Product image rollover');
 		$this->description = $this->l('Display second image when hover over product image');
-		$this->ps_versions_compliancy = array('min' => '1.6.0.0', 'max' => _PS_VERSION_);        
+		$this->ps_versions_compliancy = array('min' => '1.7.0.0', 'max' => _PS_VERSION_);        
     }
      /**
 	 * @see Module::install()
@@ -76,7 +76,7 @@ class Ybc_productimagehover extends Module
                     array(
                         'id' => 'fade',
                         'name' => $this->l('Fade')
-                    ),
+                    )/*,
                     array(
                         'id' => 'vertical_scrolling_bottom_to_top',
                         'name' => $this->l('Vertical Scrolling  Bottom To Top')
@@ -92,7 +92,7 @@ class Ybc_productimagehover extends Module
                     array(
                         'id' => 'horizontal_scrolling_right_to_left',
                         'name' => $this->l('Horizontal Scrolling Right To Left')
-                    )
+                    )*/
                 ),
                 'YBC_PI_TRANSITION_EFFECT' => Configuration::get('YBC_PI_TRANSITION_EFFECT'),
                 'setting_updated' => Tools::isSubmit('submitUpdate') ? true : false,

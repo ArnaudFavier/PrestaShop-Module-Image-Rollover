@@ -15,9 +15,7 @@
                         {/foreach}
                     </select>
                     <p class="help-block">
-                    {l s='Add {hook h=\'productImageHover\' id_product = $product.id_product} to product-list.tpl in your theme directory, just below the product images'}<br />
-                    {l s='Add {hook h=\'productImageHover\' id_product = $categoryProduct.id_product} to productscategory.tpl of productscategory module, just below the product images'}<br />
-                    {l s='Add {hook h=\'productImageHover\' id_product = $accessory.id_product} to product.tpl in your theme directory, just below accessory products images'}
+                    {l s='Add {hook h=\'productImageHover\' id_product = $product.id_product} to product.tpl in templates:catalog:_partials:miniatures directory, just below the first img tag'}
                     </p>
                 </div>
             </div>
