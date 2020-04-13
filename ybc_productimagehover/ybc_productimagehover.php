@@ -3,7 +3,7 @@
  * Copyright PrestashopAddon.com - Updated by Arnaud Favier <arnaudfavier.com>
  * Email: contact@prestashopaddon.com
  * First created: 27/11/2015
- * Last updated: 11/04/2020
+ * Last updated: 13/04/2020
 */
 if (!defined('_PS_VERSION_'))
 	exit;
@@ -17,7 +17,7 @@ class Ybc_productimagehover extends Module
 	{
 		$this->name = 'ybc_productimagehover';
 		$this->tab = 'front_office_features';
-		$this->version = '1.2.0';
+		$this->version = '1.2.1';
 		$this->author = 'PrestashopAddon.com ArnaudFavier.com';
 		$this->need_instance = 0;
 		$this->secure_key = Tools::encrypt($this->name);

@@ -25,6 +25,8 @@ Add `{hook h='productImageHover' id_product = $product.id_product}` below the fi
           </a>
 ```
 
+Then *Clear cache* in _Advanced Parameters_ > _Performances_.
+
 ## Credits
 Quick fixes based on <a href="http://prestashopaddon.com/download/prestashop-modules/free-product-image-rollover-module-for-prestashop/" target="_blank">PrestashopAddon.com's</a> **ybc_productimagehover**.
 Thanks to them.
