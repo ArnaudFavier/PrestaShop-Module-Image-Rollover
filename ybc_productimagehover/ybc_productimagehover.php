@@ -39,7 +39,7 @@ class Ybc_productimagehover extends Module
         {
             $res &= $this->registerHook($hook);
         }  
-        Configuration::updateValue('YBC_PI_TRANSITION_EFFECT','fade');    
+        Configuration::updateValue('YBC_PI_TRANSITION_EFFECT','faded');
         return  $res;
     }
     /**
@@ -74,8 +74,8 @@ class Ybc_productimagehover extends Module
                         'name' => $this->l('Zoom')
                     ),
                     array(
-                        'id' => 'fade',
-                        'name' => $this->l('Fade')
+                        'id' => 'faded',
+                        'name' => $this->l('Faded')
                     )/*,
                     array(
                         'id' => 'vertical_scrolling_bottom_to_top',

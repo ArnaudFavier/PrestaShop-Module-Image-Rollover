@@ -14,11 +14,10 @@ ul.product_list.grid > li .thumbnail-container {
   position: relative;
   overflow: hidden;
 }
+
 /*----------------------zoom effect------------*/
 .zoom:nth-child(2),
-.product-box .product-image .zoom:nth-child(2),
-.zoom.ybc_img_hover,
-.product-box .product-image .zoom.ybc_img_hover {
+.zoom.ybc_img_hover {
   opacity: 0;
   position: absolute;
   top: 0px;
@@ -33,8 +32,6 @@ ul.product_list.grid > li .thumbnail-container {
   -o-transition: all 0.5s ease 0s;
 }
 .thumbnail-container:hover .zoom:nth-child(2),
-.product-box:hover .product-image .zoom:nth-child(2),
-.product-box:hover .product-image .zoom.ybc_img_hover,
 .thumbnail-container:hover .zoom.ybc_img_hover {
   opacity: 1;
   transform: scale(1);
@@ -49,31 +46,30 @@ ul.product_list.grid > li .thumbnail-container {
     z-index: -1;
     opacity: 0;
 }
-.ie8 .thumbnail-container:hover .ybc_img_hover,
-.ie8 .product-box:hover img.ybc_img_hover {
+.ie8 .thumbnail-container:hover .ybc_img_hover {
     z-index: 0;
 }
 /*----------------------end of zoom effect------------*/
-/*----------------------fede effect-------------------*/
-.fade:nth-child(2),
-.product-box .product-image .fade:nth-child(2),
-.fade.ybc_img_hover,
-.product-box .product-image .fade.ybc_img_hover {
+
+/*----------------------faded effect-------------------*/
+@media (pointer: fine) {
+  .faded.ybc_img_hover {
+    transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+  }
+}
+.faded.ybc_img_hover {
   opacity: 0;
   position: absolute;
   top: 0px;
-  transition: all 0.5s ease 0s;
-  -moz-transition: all 0.5s ease 0s;
-  -webkit-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
 }
-.thumbnail-container:hover .fade:nth-child(2),
-.product-box:hover .product-image .fade:nth-child(2),
-.product-box:hover .product-image .fade.ybc_img_hover,
-.thumbnail-container:hover .fade.ybc_img_hover {
+.thumbnail-container:hover .faded.ybc_img_hover  {
   opacity: 1;
 }
-/*----------------------end of fade effect-------------*/
+
+/*----------------------end of faded effect-------------*/
 
 /*-----------vertical_scrolling bottom to top effect-------------------*/
 /*.vertical_scrolling_bottom_to_top:nth-child(2),
