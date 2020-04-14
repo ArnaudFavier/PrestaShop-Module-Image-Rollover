@@ -2,7 +2,7 @@
 <module>
 	<name>ybc_productimagehover</name>
 	<displayName><![CDATA[Product image rollover]]></displayName>
-	<version><![CDATA[1.2.1]]></version>
+	<version><![CDATA[1.2.2]]></version>
 	<description><![CDATA[Display second image when hover over product image]]></description>
 	<author><![CDATA[PrestashopAddon.com ArnaudFavier.com]]></author>
 	<tab><![CDATA[front_office_features]]></tab>
